@@ -1,30 +1,29 @@
-# Sistema de Gerenciamento de Tarefas e Projetos
+# Task and Project Management System
 
-Este projeto é um Sistema de Gerenciamento de Tarefas e Projetos desenvolvido em TypeScript com Node.js, aplicando os princípios do Domain-Driven Design (DDD). Ele oferece funcionalidades para criação, atribuição, acompanhamento e gerenciamento de tarefas e projetos, além de um sistema integrado de notificações para manter os usuários atualizados sobre as mudanças importantes.
+This project is a Task and Project Management System developed in TypeScript with Node.js, applying the principles of Domain-Driven Design (DDD). It offers functionalities for creating, assigning, tracking, and managing tasks and projects, along with an integrated notification system to keep users updated on important changes.
 
-## Funcionalidades
+## Features
 
-- **Criação e Gerenciamento de Projetos**: Crie e gerencie projetos, definindo prazos e atribuindo tarefas.
-- **Gestão de Tarefas**: Adicione, atualize e remova tarefas dentro de cada projeto.
-- **Atribuição de Tarefas**: Atribua tarefas a diferentes usuários e acompanhe o progresso.
-- **Notificações**: Receba notificações para atualizações importantes, como atribuição de tarefas, lembretes de prazos e mudanças de status.
+- **Project Creation and Management**: Create and manage projects, setting deadlines and assigning tasks.
+- **Task Management**: Add, update, and remove tasks within each project.
+- **Task Assignment**: Assign tasks to different users and track progress.
+- **Notifications**: Receive notifications for important updates, such as task assignments, deadline reminders, and status changes.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **Node.js**: Ambiente de execução JavaScript no lado do servidor.
-- **TypeScript**: Linguagem de programação tipada baseada em JavaScript.
-- **DDD**: Princípios de Domain-Driven Design para estruturar a lógica de negócios.
+- **Node.js**: Server-side JavaScript runtime environment.
+- **TypeScript**: Typed programming language based on JavaScript.
+- **DDD**: Principles of Domain-Driven Design to structure business logic.
 
-## Estrutura do Projeto
+## Project Structure
 
 - `src/`
-    - `domain/`: Contém os modelos de entidades, objetos de valor e serviços de domínio.
-    - `application/`: Lógica de aplicação que orquestra o uso de entidades e serviços de domínio.
-    - `infrastructure/`: Implementação da camada de infraestrutura, como banco de dados e mecanismos de notificação.
-- `tests/`: Testes unitários para as diferentes partes do sistema.
+  - `domain/`: Contains entity models, value objects, and domain services.
+  - `application/`: Application logic that orchestrates the use of entities and domain services.
+  - `infrastructure/`: Implementation of the infrastructure layer, such as database and notification mechanisms.
+- `tests/`: Unit tests for the different parts of the system.
 
-
-# Commandos
+# Commands
 
 ```bash
 pnpm init
@@ -35,5 +34,3 @@ pnpm i vitest -D
 # Tests
 
 pnpm i jest ts-jest @types/jest -D
-```
-
