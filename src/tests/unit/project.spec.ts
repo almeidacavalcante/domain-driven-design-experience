@@ -1,6 +1,5 @@
-import UniqueEntityID from "../../domain/entities/unique-entity-id";
-import Project from "../../domain/entities/project.entity";
-import {StartedStatus} from "@/domain/entities/project-status";
+import UniqueEntityID from "@/domain/entities/unique-entity-id";
+import Project from "@/domain/entities/project.entity";
 import {expect} from "vitest";
 
 describe('Project tests', function () {

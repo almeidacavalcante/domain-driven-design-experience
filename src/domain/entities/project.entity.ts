@@ -11,8 +11,6 @@ interface Props {
   description: string;
   status?: ProjectStatus;
   userId: UniqueEntityID;
-  createdAt: Date;
-  updatedAt?: Date;
   deadline: Date;
   tasks: Task[];
   tags: Tag[];
@@ -39,13 +37,6 @@ export default class Project extends Entity<Props> {
     return this.props.description;
   }
 
-  get updatedAt(): Date | undefined {
-    return this.props.updatedAt;
-  }
-
-  get createdAt(): Date {
-    return this.props.createdAt;
-  }
 
   get status(): string {
     if (!this.props.status) {
@@ -56,11 +47,11 @@ export default class Project extends Entity<Props> {
 
   public finish() {
     this.props.status?.complete();
-    this.props.updatedAt = new Date();
+    this.touch();
   }
 
   public overdue() {
     this.props.status?.overdue();
-    this.props.updatedAt = new Date();
+    this.touch();
   }
 }
